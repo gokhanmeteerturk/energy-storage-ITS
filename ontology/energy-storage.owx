@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/gokhanmeteerturk/energy-storage-ITS"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/gokhanmeteerturk/energy-storage-ITS">
+    <Prefix name="" IRI="https://w3id.org/gokhanmeteerturk/energy-storage-ITS#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargingSpeedValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CostValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyStorageSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlywheelEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GridSuitabilityValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotWaterStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HydrogenStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeadAcidBatteries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LithiumIonBatteries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoltenSaltStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SodiumSulfurBatteries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageDurationValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyntheticFuels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalEnergyStorage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChargingSpeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGridSuitability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStorageDuration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FastSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighCost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighSuitability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LongTerm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowCost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowSuitability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumCost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumSuitability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumTerm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShortTerm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SlowSpeed"/>
+    </Declaration>
+    
+    <!-- Class Descriptions -->
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnergyStorageSystem</IRI>
+        <Literal>A system designed to capture and store energy for later use, enabling better management of power resources and integration of renewable energy sources. These systems can store energy in various forms including mechanical, chemical, and thermal energy.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChemicalEnergyStorage</IRI>
+        <Literal>A method of storing energy through chemical reactions that can be reversed to release the stored energy when needed. This includes technologies like batteries, hydrogen storage, and synthetic fuels.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BatteryEnergyStorage</IRI>
+        <Literal>An electrochemical storage device that converts chemical energy into electrical energy through reversible chemical reactions. Batteries are widely used for their versatility and relatively high energy density.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MechanicalEnergyStorage</IRI>
+        <Literal>Systems that store energy in the form of mechanical potential or kinetic energy. This category includes technologies like pumped hydro, compressed air, and flywheels.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThermalEnergyStorage</IRI>
+        <Literal>Systems that store energy in the form of heat or cold for later use in heating, cooling, or power generation. These systems often use materials with high heat capacity or phase change materials.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LeadAcidBatteries</IRI>
+        <Literal>One of the oldest types of rechargeable batteries, using lead and lead dioxide electrodes in an acid electrolyte. These batteries are commonly used in vehicles and backup power systems due to their reliability and low cost.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LithiumIonBatteries</IRI>
+        <Literal>High-energy-density rechargeable batteries using lithium compounds as the electrode material. These batteries are widely used in portable electronics and electric vehicles due to their high efficiency and long cycle life.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SodiumSulfurBatteries</IRI>
+        <Literal>High-temperature batteries operating at around 300°C, using molten sodium and sulfur. These batteries are primarily used for grid-scale energy storage due to their high energy density and long discharge duration.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HydrogenStorage</IRI>
+        <Literal>A method of storing energy by converting electricity into hydrogen through electrolysis, which can later be used in fuel cells or combustion engines. This technology offers potential for long-term, large-scale energy storage.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SyntheticFuels</IRI>
+        <Literal>Artificially produced fuels that store energy in chemical bonds, typically created using electricity from renewable sources. These fuels can be used as direct replacements for conventional fossil fuels in existing infrastructure.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompressedAirEnergyStorage</IRI>
+        <Literal>A system that stores energy by compressing air in underground caverns or vessels, which is later released to drive turbines. This technology is suitable for large-scale, long-duration energy storage.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlywheelEnergyStorage</IRI>
+        <Literal>A mechanical device that stores energy in the form of rotational kinetic energy. Flywheels are particularly useful for short-term energy storage and power quality applications due to their rapid response capabilities.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PumpedHydroelectricEnergyStorage</IRI>
+        <Literal>A system that stores energy by pumping water to a higher elevation reservoir and releasing it through turbines when needed. This is currently the most widely used form of grid-scale energy storage worldwide.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotWaterStorage</IRI>
+        <Literal>A thermal storage system that stores energy in the form of heated water in insulated tanks. This technology is commonly used in residential and commercial buildings for space heating and hot water supply.</Literal>
+    </AnnotationAssertion>
+    
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MoltenSaltStorage</IRI>
+        <Literal>A thermal storage system using molten salts to store high-temperature heat energy. This technology is particularly important in concentrated solar power plants for maintaining power generation during cloudy periods or at night.</Literal>
+    </AnnotationAssertion>
+    
+    <SubClassOf>
+        <Class IRI="#BatteryEnergyStorage"/>
+        <Class IRI="#ChemicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalEnergyStorage"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+        <Class IRI="#MechanicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#MechanicalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#MediumSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorage"/>
+        <Class IRI="#MechanicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#MechanicalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#FastSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWaterStorage"/>
+        <Class IRI="#ThermalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWaterStorage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#ThermalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWaterStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#SlowSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <Class IRI="#ChemicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#ChemicalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#MediumSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeadAcidBatteries"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeadAcidBatteries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#BatteryEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeadAcidBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#MediumSpeed"/>
+        </ObjectHasValue>
+        </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumIonBatteries"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumIonBatteries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#BatteryEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumIonBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#FastSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalEnergyStorage"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoltenSaltStorage"/>
+        <Class IRI="#ThermalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoltenSaltStorage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#ThermalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoltenSaltStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#SlowSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+        <Class IRI="#MechanicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#MechanicalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#SlowSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumSulfurBatteries"/>
+        <Class IRI="#BatteryEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumSulfurBatteries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#BatteryEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumSulfurBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#MediumSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticFuels"/>
+        <Class IRI="#ChemicalEnergyStorage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticFuels"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPrerequisite"/>
+            <Class IRI="#ChemicalEnergyStorage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticFuels"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasChargingSpeed"/>
+            <NamedIndividual IRI="#SlowSpeed"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalEnergyStorage"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpeedValue"/>
+        <NamedIndividual IRI="#FastSpeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CostValue"/>
+        <NamedIndividual IRI="#HighCost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GridSuitabilityValue"/>
+        <NamedIndividual IRI="#HighSuitability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StorageDurationValue"/>
+        <NamedIndividual IRI="#LongTerm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CostValue"/>
+        <NamedIndividual IRI="#LowCost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GridSuitabilityValue"/>
+        <NamedIndividual IRI="#LowSuitability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CostValue"/>
+        <NamedIndividual IRI="#MediumCost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpeedValue"/>
+        <NamedIndividual IRI="#MediumSpeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GridSuitabilityValue"/>
+        <NamedIndividual IRI="#MediumSuitability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StorageDurationValue"/>
+        <NamedIndividual IRI="#MediumTerm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StorageDurationValue"/>
+        <NamedIndividual IRI="#ShortTerm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargingSpeedValue"/>
+        <NamedIndividual IRI="#SlowSpeed"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChargingSpeed"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGridSuitability"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStorageDuration"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChargingSpeed"/>
+        <Class IRI="#ChargingSpeedValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#CostValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGridSuitability"/>
+        <Class IRI="#GridSuitabilityValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#EnergyStorageSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStorageDuration"/>
+        <Class IRI="#StorageDurationValue"/>
+    </ObjectPropertyRange>
+</Ontology>
