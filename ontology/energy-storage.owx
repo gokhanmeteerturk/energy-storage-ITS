@@ -404,6 +404,235 @@
             <NamedIndividual IRI="#SlowSpeed"/>
         </ObjectHasValue>
     </SubClassOf>
+    <!-- LeadAcidBatteries -->
+    <SubClassOf>
+        <Class IRI="#LeadAcidBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#LowCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeadAcidBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#MediumSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeadAcidBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#ShortTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- LithiumIonBatteries -->
+    <SubClassOf>
+        <Class IRI="#LithiumIonBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#HighCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumIonBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#HighSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LithiumIonBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#MediumTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- SodiumSulfurBatteries -->
+    <SubClassOf>
+        <Class IRI="#SodiumSulfurBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#MediumCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumSulfurBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#HighSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SodiumSulfurBatteries"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#MediumTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- HydrogenStorage -->
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#HighCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#MediumSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HydrogenStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#LongTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- SyntheticFuels -->
+    <SubClassOf>
+        <Class IRI="#SyntheticFuels"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#HighCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticFuels"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#LowSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntheticFuels"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#LongTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- CompressedAirEnergyStorage -->
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#MediumCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#HighSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompressedAirEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#LongTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- FlywheelEnergyStorage -->
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#MediumCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#MediumSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlywheelEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#ShortTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- PumpedHydroelectricEnergyStorage -->
+    <SubClassOf>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#HighCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#HighSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PumpedHydroelectricEnergyStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#LongTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- HotWaterStorage -->
+    <SubClassOf>
+        <Class IRI="#HotWaterStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#LowCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWaterStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#LowSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotWaterStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#ShortTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
+
+    <!-- MoltenSaltStorage -->
+    <SubClassOf>
+        <Class IRI="#MoltenSaltStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCost"/>
+            <NamedIndividual IRI="#MediumCost"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoltenSaltStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasGridSuitability"/>
+            <NamedIndividual IRI="#HighSuitability"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoltenSaltStorage"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasStorageDuration"/>
+            <NamedIndividual IRI="#MediumTerm"/>
+        </ObjectHasValue>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#ThermalEnergyStorage"/>
         <Class IRI="#EnergyStorageSystem"/>
